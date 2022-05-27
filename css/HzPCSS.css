@@ -287,7 +287,6 @@ iframe{
     #imageDisplay{
         display: block;
         width: 800px;
-        height: 400px;
         margin: 0 auto;
         background-color: #b3edff;
         border-style: solid;
