@@ -100,8 +100,7 @@ main .mobileContact h2{
 main .rightIntro{
 
     font-family: 'Times New Roman', Times, serif;
-    text-align: justify;
-    text-indent: 2em;
+    text-align: left;
     font-size: 150%;
     line-height: 170%;
 }
@@ -126,6 +125,12 @@ main .sideNav{
     width: 90%;
     margin: 0 auto;
 }
+.rightIntro li{
+    display: block;
+    margin-left: 3em;
+}
+
+
 #imageDisplay{
     display: none;
 }
