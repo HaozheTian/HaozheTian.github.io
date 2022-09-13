@@ -1,97 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Haozhe Tian Home</title>
-	<link rel="stylesheet" href="css/HzPCSS.css">
-	<link rel="icon" type="image/x-icon" href="imgs/head_ico.ico">
-	<script src = "js/HzPJS.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Haozhe Tian Home</title>
+    <link rel="icon" type="image/x-icon" href="imgs/head_ico.ico">
+    <link rel="stylesheet" href="css/stylesheet.css">
 </head>
+
 <body>
-<div id = "container">
 <header>
-    <img class = "headshot" src="imgs/headimg.jpg" alt="Photo of Haozhe Tian"/>
-    <h1>Haozhe Tian</h1>
+    <img id = "headshot" src="imgs/headimg.jpg" alt="Photo of Haozhe Tian"/>
+
+    <h1 id = "name">Haozhe Tian</h1>
+
     <p>
         <a href = "https://www.linkedin.com/in/haozhetianic/?locale=en_US"><img src="imgs/linkedin.png" alt="linkedin"></a>
         <a href = "https://github.com/HaozheTian"><img src="imgs/github.png" alt="github"></a>
         <a href = "https://space.bilibili.com/16120738"><img src="imgs/bilibili.png" alt="bilibili"></a>
     </p>
-    <p>Master's Student at Imperial College London</p>
+
     <div class="dropdown">
-        <button class="dropbtn">Content</button>
+        <button class="dropbtn">Navigation</button>
         <nav class="dropdown-content">
-            <a href = "work.html">Resume</a><a href = "index.html" class = "active">Homepage</a><a href = "photos.html">Photo Booth</a>
+            <a href = "research.html">research</a><a href = "index.html" class = "active">home</a><a href = "photos.html">photos</a>
         </nav>
     </div>
 </header>
-<main>
-<aside class = "leftContactInfo">
-	<iframe src="https://calendar.google.com/calendar/embed?height=300&wkst=1&bgcolor=%23227697&ctz=Asia%2FShanghai&src=dGh6ODIzODIzQGdtYWlsLmNvbQ&color=%23039BE5&showNav=1&showTz=1&showPrint=0" style="border-width:0" width="700" height="300" frameborder="0" scrolling="no"></iframe>
-    <h2>Contact Me</h2>
-    <table>
-        <tbody>
-            <tr>
-                <td>Email:</td>
-            </tr>
-            <tr>
-                <td>haozhetian@126.com</td>
-            </tr>
-            <tr>
-                <td><a href = "https://www.linkedin.com/in/haozhetianic/?locale=en_US">Linkedin Profile</a></td>
-            </tr>
-        </tbody>
-    </table>
 
-</aside>
-<section class = "rightIntro">
-    <h2>About</h2>
+<main>
+<section class = "Intro">
+
+<div id = "about">
+    <h3>About</h3>
     <p>
-        I am currently a Master's student at the department of Electrical and Electronic Engineering, Imperial College, London.
-        For my Master's degree, I majored in Communications and Signal Processing.
-        I received my Bachelor's degree from the department of Automation Science, Beihang University, China.
-        For my Bachelor's degree, I majored in Pattern Recognition and Control Science.
-        My research interests are:
+        Haozhe Tian is currently a Master's student at the department of Electrical and Electronic Engineering, Imperial College, London.
+        For his Master's degree, he majored in Communications and Signal Processing.
+        Haozhe Tian received his Bachelor's degree from the department of Automation Science, Beihang University, China.
+        For his Bachelor's degree, he majored in Pattern Recognition and Control Science.
+        his research interests are:
     </p>
     <ul>
         <li>biomedical signal processing (EEG, ECG, PPG)</li>
         <li>computer vision and pattern recognition</li>
         <li>machine learning</li>
-      </ul>
+    </ul>
+</div>
+
+<div id = "aboutPhoto">
+    <img src="imgs/beihang.jpg" alt="beihang photo">
+</div>
+
+<div>
+    <h3>Curriculum Vitae</h3>
     <p>
-        For more detail, please refer to my CV: <a href = "files/HaozheTian_CV.pdf">Curriculum Vitae</a>
+        Current CV: <a href = "files/HaozheTian_CV.pdf">HaozheTian_CV.pdf</a><br />
+        (updated September 12th, 2022)
+    </p>
+    <h3>Useful Links</h3>
+    <p>
+        email: <a href = "haozhetian@126.com">haozhetian@126.com</a>
     </p>
     <p>
-        Here is the link to a my recent MATLAB project: <a href="https://haozhetian.github.io/SIMO_Simulation/FunctionUsageNote.html">Multipath Spatiotemporal SIMO</a>
+        linkedin: <a href = "https://www.linkedin.com/in/haozhetianic/?locale=en_US"><img src="imgs/linkedin.png" alt="linkedin"></a>
     </p>
     <p>
-        This website was initially created to practice responsive design.
-        Feel free to look around! Also feel free to contact me about work or bug report.
+        github: <a href = "https://github.com/HaozheTian"><img src="imgs/github.png" alt="github"></a>
     </p>
+    
     <p>
-        <img src="imgs/Pokemon.jpg" alt="Cute Pokemon Picture">
+        sample project: <a href="https://haozhetian.github.io/SIMO_Simulation/FunctionUsageNote.html">Multipath Spatiotemporal SIMO</a>
     </p>
+</div>
 </section>
 </main>
-</div>
-<footer class = "mobileContact">
-	<iframe src="https://calendar.google.com/calendar/embed?height=300&wkst=1&bgcolor=%23227697&ctz=Asia%2FShanghai&src=dGh6ODIzODIzQGdtYWlsLmNvbQ&color=%23039BE5&showNav=1&showTz=1&showPrint=0" style="border-width:0" width="700" height="300" frameborder="0" scrolling="no"></iframe>
-    <h2>Contact Me</h2>
-    <table>
-        <tbody>
-            <tr>
-                <td>Email:</td>
-            </tr>
-            <tr>
-                <td>haozhetian@126.com</td>
-            </tr>
-            <tr>
-                <td><a href = "https://www.linkedin.com/in/haozhetianic/?locale=en_US">Linkedin Profile</a></td>
-            </tr>
-        </tbody>
-    </table>
-</footer>
 
 </body>
 </html>
