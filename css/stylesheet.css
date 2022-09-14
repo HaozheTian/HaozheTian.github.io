@@ -108,6 +108,9 @@ body .Intro img{
     padding: 0.5em;
     text-align: center;
 }
+.textblock{
+    vertical-align: top;
+}
 .researchItem img{
     width: 75vw;
 }
