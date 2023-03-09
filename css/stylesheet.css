@@ -69,11 +69,11 @@ body .Intro{
 }
 body .Intro h3{
     font-size: 110%;
-    margin-top: 1em;
-    margin-bottom: 2em;
+    margin-top: 2em;
+    margin-bottom: 1em;
     border-style: solid;
     border-color: #175f7b;
-    border-width: 0 0 2px 0;
+    border-width: 0 0 0.2em 0;
 }
 body .Intro img{
     display: inline-block;
@@ -127,6 +127,12 @@ body .Intro img{
     text-align: justify;
 }
 
+
+
+
+
+
+
 @media only screen and (min-width: 820px) {
 .dropdown .dropdown-content{
     display: block;
@@ -163,14 +169,12 @@ body .Intro img{
 }
 #about{
     display: inline-block;
-    width: 58vw;
+    width: 50vw;
 }
 #aboutPhoto{
-    float: right;
     display: inline-block;
     width:30vw;
-    max-width: 20em;
-    margin: 2em;
+    margin-left: 5vw;
 }
 .researchItem img{
     display: inline-block;
@@ -179,6 +183,23 @@ body .Intro img{
 .researchItem .textblock{
     display: inline-block;
     width: 40vw;
+}
+#awardItems .right{
+    display: block;
+    width: 25em;
+    text-align: right;
+    margin-left: 20vw;
+}
+#awardItems .left{
+    display: block;
+    width: 40em;
+    text-align: left;
+}
+main{
+    font-size: 1.5vw;
+}
+header #headshot{
+    width: 10vw;
 }
 
 }
