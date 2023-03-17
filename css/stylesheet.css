@@ -134,6 +134,12 @@ body .Intro img{
 
 
 @media only screen and (min-width: 820px) {
+header #name{
+    font-size: 3vw;
+}
+header p img{
+    width: 2vw;
+}
 .dropdown .dropdown-content{
     display: block;
 }
@@ -146,7 +152,7 @@ body .Intro img{
     width: 27%;
     text-align: center;
     padding: 15px;
-    font-size: 100%;
+    font-size: 2vw;
     color: #ffffff;
     text-transform: uppercase;
     text-decoration: none;
@@ -157,13 +163,13 @@ body .Intro img{
     border-width: 3px;
     border-top-color: #7fcceb;
     border-radius: 0 0 10px 10px;
-    font-size: 110%;
+    font-size: 2.2vw;
 }
 .dropdown-content a:hover{
     border-width: 3px;
     border-top-color: #7fcceb;
     border-radius: 0 0 10px 10px;
-    font-size: 170%;
+    font-size: 2.5vw;
     text-decoration: none;
     color: #fff;
 }
@@ -186,13 +192,13 @@ body .Intro img{
 }
 #awardItems .right{
     display: block;
-    width: 25em;
+    width: 30em;
     text-align: right;
     margin-left: 20vw;
 }
 #awardItems .left{
     display: block;
-    width: 40em;
+    width: 45em;
     text-align: left;
 }
 main{
