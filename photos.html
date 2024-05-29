@@ -1,41 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Haozhe Tian Home</title>
-	<link rel="icon" type="image/x-icon" href="imgs/head_ico.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Haozhe Tian Home</title>
+    <link rel="icon" type="image/x-icon" href="imgs/head_ico.ico">
     <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/gallery.css">
 </head>
 
 <body>
 <header>
-    <img id = "headshot" src="imgs/headimg.jpg" alt="Photo of Haozhe Tian"/>
-
-    <h1 id = "name">Haozhe Tian</h1>
-
+    <img id="headshot" src="imgs/headimg.jpg" alt="Photo of Haozhe Tian"/>
+    <h1 id="name">Haozhe Tian</h1>
     <p>
-        <a href = "https://www.linkedin.com/in/haozhetianic/?locale=en_US" target="_blank"><img src="imgs/linkedin.png" alt="linkedin"></a>
-        <a href = "https://github.com/HaozheTian" target="_blank"><img src="imgs/github.png" alt="github"></a>
-        <a href = "https://space.bilibili.com/16120738" target="_blank"><img src="imgs/bilibili.png" alt="bilibili"></a>
+        <a href="https://www.linkedin.com/in/haozhetianic/?locale=en_US" target="_blank"><img src="imgs/linkedin.png" alt="linkedin"></a>
+        <a href="https://github.com/HaozheTian" target="_blank"><img src="imgs/github.png" alt="github"></a>
+        <a href="https://space.bilibili.com/16120738" target="_blank"><img src="imgs/bilibili.png" alt="bilibili"></a>
     </p>
-
     <div class="dropdown">
         <button class="dropbtn">Navigation</button>
         <nav class="dropdown-content">
-            <a href = "research.html">research</a><a href = "index.html">home</a><a href = "photos.html" class = "active">photos</a>
+            <a href="research.html">research</a>
+            <a href="index.html">home</a>
+            <a href="photos.html" class="active">photos</a>
         </nav>
     </div>
 </header>
 
 <main>
+    <div class="photo-gallery" id="photo-gallery"></div>
+
+    <!-- Full-size image modal -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="fullImage">
+        <div id="caption"></div>
+    </div>
+
     <div data-mc-src="87217e0a-40fa-4618-a86b-63b9605e649f#instagram"></div>
-        
-    <script 
-        src="https://cdn2.woxo.tech/a.js#631f5bc5fda3eb39b8e979b2" 
-        async data-usrc>
+    <script src="https://cdn2.woxo.tech/a.js#631f5bc5fda3eb39b8e979b2" async data-usrc></script>
+
+    <script>
+        const imagePaths = [
+            'imgs/gallery/img1.jpeg',
+            'imgs/gallery/img2.jpeg',
+            'imgs/gallery/img3.jpeg',
+            // Add more image paths as needed
+        ];
+
+        function loadImages() {
+            const gallery = document.getElementById('photo-gallery');
+            imagePaths.forEach(path => {
+                const imgDiv = document.createElement('div');
+                imgDiv.classList.add('photo');
+                const img = document.createElement('img');
+                img.src = path;
+                img.alt = `Photo from ${path}`;
+                imgDiv.appendChild(img);
+                gallery.appendChild(imgDiv);
+
+                // Add click event to open full-size image
+                img.addEventListener('click', () => {
+                    const modal = document.getElementById('imageModal');
+                    const modalImg = document.getElementById('fullImage');
+                    const captionText = document.getElementById('caption');
+                    modal.style.display = "block";
+                    modalImg.src = path;
+                    captionText.innerHTML = img.alt;
+                });
+            });
+        }
+
+        // Close the modal when the user clicks on <span> (x)
+        document.addEventListener('DOMContentLoaded', () => {
+            loadImages();
+            const modal = document.getElementById('imageModal');
+            const span = document.getElementsByClassName('close')[0];
+            span.onclick = function() {
+                modal.style.display = "none";
+            };
+        });
     </script>
 </main>
-
 </body>
 </html>
