@@ -99,6 +99,19 @@ body .Intro img{
     border-radius: 2em;
     display: inline;
 }
+
+#personal-video{
+    width: 70vw;
+    text-align: center;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+.responsive-video {
+    width: 100%;
+    height: auto;
+}
+
 .researchItem{
     border-style: solid;
     border-color: #175f7b;
@@ -181,6 +194,20 @@ header p img{
     display: inline-block;
     width:30vw;
     margin-left: 5vw;
+}
+#personal-container {
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: space-between; /* Space elements evenly */
+    width: 100%; /* Ensure it takes full width */
+}
+
+#personal-video, #personal {
+    width: 40vw; /* Both elements will have the same width */
+}
+
+#personal {
+    margin-left: 5vw; /* If you still want a margin */
 }
 .researchItem img{
     display: inline-block;
