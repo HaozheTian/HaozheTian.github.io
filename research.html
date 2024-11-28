@@ -30,23 +30,46 @@
 
 <main>
     <div class="researchItem">
-        <img src="imgs/BFPResearch.png" alt="BFPSchematic">
+        <img src="imgs/RLARResearch.png" alt="CGPSchematic">
         <div class="textblock">
-            <h3>Automatic Surface Plasmon Microscopy based on Object Detection Network</h3>
-<!--             <p><b>Supervision: </b> Dr. Bei Zhang (Beihang University, Beijing)</p> -->
+            <h3>Reinforcement Learning with Adaptive Regularization for Safe Control of Critical Systems</h3>
             <p>
-                Surface Plasmon Microscopy (SPM) features both high sensitivity and resolution.
-                This work aimed to automatically conduct SPM measurements on batches of images.
-                To do this, object detection networks (Faster R-CNN, SSD, YOLO) were used to classify and localize surface plasmon profiles.
-                Self-correlation was also proposed to identify the center of surface plasmon profiles.
+                Reinforcement Learning (RL) is a powerful method for controlling dynamic systems, but its learning mechanism can lead to unpredictable actions that undermine the safety of critical systems. 
+                Here, we propose RL with Adaptive Regularization (RL-AR), an algorithm that enables safe RL exploration by combining the RL policy with a policy regularizer that hard-codes the safety constraints. 
+                RL-AR performs policy combination via a "focus module," which determines the appropriate combination depending on the state—relying more on the safe policy regularizer for less-exploited states while allowing unbiased convergence for well-exploited states. 
+                In a series of critical control applications, we demonstrate that RL-AR not only ensures safety during training but also achieves a return competitive with the standards of model-free RL that disregards safety.
             </p>
         </div>
         <div class="pubblock">
             <p>
-                <b>Publications: </b>
+                <b>Publication: </b>
             </p>
             <ul>
-                <li>Bei Zhang (supervisor), Haozhe Tian, <em>et al</em>., "Instrumentation of Surface Plasmon Microscopy: Complete Scheme of Signal Extractions," in IEEE Transactions on Instrumentation and Measurement, vol. 70, pp. 1-10, 2021, Art no. 7003710, doi: <a href = "https://doi.org/10.1109/TIM.2021.3072137" target="_blank">10.1109/TIM.2021.3072137</a>.</li>
+                <li>Haozhe Tian, Homayoun Hamedmoghadam, Robert Shorten, and Pietro Ferraro. Reinforcement Learning with Adaptive Regularization for Safe Control of Critical Systems. In NeurIPS 2024.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="researchItem">
+        <img src="imgs/CGPResearch.png" alt="CGPSchematic">
+        <div class="textblock">
+            <h3>Link Inference Attacks in Graph Neural Networks</h3>
+            <p>
+                Graph Neural Network (GNN) is a widely-used machine learning model on graph data.
+                However, GNN's potential leakage of sensitive graph node relationships (i.e., links) could cause severe user privacy infringements.
+                Such attacks are named graph link inference attacks.
+                This work considers the setting where some malicious nodes are established by the attacker.
+                The added malicious nodes significantly enhance the practicality of link inference attacks.
+                This work further proposes centroid-guided graph poisoning (CGP).
+                Without participating in the training process of the target model, CGP operates on links between malicious nodes to make the target model more vulnerable to graph link inference attacks.
+            </p>
+        </div>
+        <div class="pubblock">
+            <p>
+                <b>Publication: </b>
+            </p>
+            <ul>
+                <li>Haozhe Tian, Haibo Hu, and Qingqing Ye. CGP: Centroid-guided Graph Poisoning for Link Inference Attacks in Graph Neural Networks. In IEEE BigData 2023.</li>
             </ul>
         </div>
     </div>
@@ -55,7 +78,6 @@
         <img src="imgs/ECGReasearch.png" alt="ECGSchematic">
         <div class="textblock">
             <h3>Physical State Classification using Ear-ECG and Ear-PPG</h3>
-<!--             <p><b>Supervision: </b> Prof. Danilo Mandic (Imperial College, London)</p> -->
             <p>
                 This work aimed to classifify three physical states using ECG and PPG measured around the ears.
                 Ear-ECG and Ear-PPG contain less motion artefacts, and do not hinder subjects' movements.
@@ -71,31 +93,28 @@
                 <b>Publication: </b>
             </p>
             <ul>
-                <li>Haozhe Tian, <em>et al</em>., "Hearables: Heart Rate Variability from Ear Electrocardiogram and Ear Photoplethysmogram (Ear-ECG and Ear-PPG)", <b>accepted</b> for oral presentation at IEEE EMBC'2023.</li>
+                <li>Haozhe Tian, Edoardo Occhipinti, Amir Nassibi, Danilo Mandic, 2023, July. Hearables: Heart Rate Variability from Ear Electrocardiogram and Ear Photoplethysmogram (Ear-ECG and Ear-PPG). In IEEE EMBC 2023.</li>
             </ul>
         </div>
     </div>
 
     <div class="researchItem">
-        <img src="imgs/CGPResearch.png" alt="CGPSchematic">
+        <img src="imgs/BFPResearch.png" alt="BFPSchematic">
         <div class="textblock">
-            <h3>Link Inference Attacks in Graph Neural Networks</h3>
+            <h3>Automatic Surface Plasmon Microscopy based on Object Detection Network</h3>
             <p>
-                Graph Neural Network (GNN) is the state-of-the-art machine learning model on graph data.
-                However, GNN's potential leakage of sensitive graph node relationships (i.e., links) could cause severe user privacy infringements.
-                Such attacks are named graph link inference attacks.
-                This work considers the setting where some malicious nodes are established by the attacker.
-                The added malicious nodes significantly enhance the practicality of link inference attacks.
-                This work further proposes centroid-guided graph poisoning (CGP).
-                Without participating in the training process of the target model, CGP operates on links between malicious nodes to make the target model more vulnerable to graph link inference attacks.
+                Surface Plasmon Microscopy (SPM) features both high sensitivity and resolution.
+                This work aimed to automatically conduct SPM measurements on batches of images.
+                To do this, object detection networks (Faster R-CNN, SSD, YOLO) were used to classify and localize surface plasmon profiles.
+                Self-correlation was also proposed to identify the center of surface plasmon profiles.
             </p>
         </div>
         <div class="pubblock">
             <p>
-                <b>Publication: </b>
+                <b>Publications: </b>
             </p>
             <ul>
-                <li>Haozhe Tian, <em>et al</em>., "CGP: Centroid-guided Graph Poisoning for Link Inference Attacks in Graph Neural Networks", <b>accepted</b> by IEEE BigData'2023.</li>
+                <li>Bei Zhang, Haozhe Tian, Tianyu Xiao, and Jing Zhang. "Instrumentation of surface plasmon microscopy: complete scheme of signal extractions." In IEEE Transactions on Instrumentation and Measurement 70 (2021).</li>
             </ul>
         </div>
     </div>
